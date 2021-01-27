@@ -9,6 +9,7 @@ Suite Teardown    Close All Browsers
 Add To Cart Should Succeed
     [Tags]    cart_A
     Go To    ${TOP_PAGE}
+    Sleep    3s
     Click Product Image Of Featured Products
     Wait Until Element Is Visible    //div[@class="product-wrap"]/h1[@class="product-title"]
     ${productName} =    Get Text    //div[@class="product-wrap"]/h1[@class="product-title"]
