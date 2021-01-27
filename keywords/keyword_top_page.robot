@@ -6,6 +6,6 @@ Close Subscribe Popup If Need
 
 Verify Should Navigate To Top Page
     Wait Until Location Is    ${TOP_PAGE}
-    Verify Element Should Be Exists    //section[@class="page-section"][1]//*[@class="hero"]/*[contains(@class, "swiper-container-horizontal")]
-    Verify Element Should Be Exists    //section[@class="page-section"][2]//*[@class="swiper-box-top-title"]
-    Element Text Should Be    //section[@class="page-section"][2]//*[@class="swiper-box-top-title"]//a/span[1]    TODAY'S BEST DEALS
+    Verify Element Should Be Exists    //*[@class="page-content"]/*[@class="tiles-wrap"]//*[contains(@class, "grid-item")]/a[@class="tile-img"]/img
+    Verify Element Should Be Exists    //section[@class="page-section"][1]//*[@class="standard-box-top-title"]
+    Element Text Should Be    //section[@class="page-section"][1]//*[@class="standard-box-top-title"]    FEATURED PRODUCTS

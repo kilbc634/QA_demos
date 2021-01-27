@@ -7,6 +7,7 @@ Open Chrome With Webdriver
     # Call Method     ${options}    add_argument    --headless
     Call Method     ${options}    add_argument    --disable-dev-shm-usage
     Call Method     ${options}    add_argument    --disable-notifications
+    Call Method     ${options}    add_argument    --disable-gpu
     ${myOS} =    Evaluate    platform.system()    platform
     ${chromedriverPath} =    Set Variable If
     ...    '${myOS}' == 'Windows'    ${workDir}/src/chromedriver_win.exe

@@ -1,4 +1,9 @@
 *** Keywords ***
+Go To Products Page
+    [Arguments]    ${page}
+    Open Sidebar
+    Click Sidebar Products Category List Item By Name    ${page}
+
 Verify String Should Be Expected
     [Arguments]    ${string}    ${expected}
     Should Be Equal    ${string}    ${expected}
