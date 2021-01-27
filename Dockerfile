@@ -14,7 +14,7 @@ RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/so
 RUN apt -y update
 RUN apt -y install google-chrome-stable
 # change webdevice permission
-RUN chmod 777 lib/chromedriver_linux
-RUN chmod 777 lib/chromedriver_win.exe
+RUN chmod 777 src/chromedriver_linux
+RUN chmod 777 src/chromedriver_win.exe
 
 CMD python3 -m robot .
