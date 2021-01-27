@@ -1,4 +1,8 @@
 *** Keywords ***
+Click Cart Icon
+    Wait Until Element Is Visible    //div[@class="header2020-inner"]//a[@aria-label="Shopping Cart"]
+    Click Element    //div[@class="header2020-inner"]//a[@aria-label="Shopping Cart"]
+
 Click Navbar Morevert
     Wait Until Element Is Visible    //div[@class="header2020-inner"]/*[contains(@class, "menu-box")]/i[@aria-label="Site Menu"]
     Click Element    //div[@class="header2020-inner"]/*[contains(@class, "menu-box")]/i[@aria-label="Site Menu"]

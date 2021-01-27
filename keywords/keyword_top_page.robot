@@ -1,4 +1,10 @@
 *** Keywords ***
+Click Product Image Of Featured Products
+    [Arguments]    ${index}=1
+    ${targetElement} =    Set Variable    //section[@class="page-section"][1]//div[contains(@class, "item-cells-wrap")]/*[@class="item-cell"][@id][${index}]//img
+    Wait Until Element Is Visible    ${targetElement}
+    Click Element    ${targetElement}
+
 Close Subscribe Popup If Need
     [Arguments]    ${waitTime}=5s
     ${passed} =    Run Keyword And Return Status    Wait Until Element Is Visible    //div[@id="popup"]/a[@id="popup-close"]    timeout=${waitTime}
