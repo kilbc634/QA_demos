@@ -6,6 +6,23 @@ Suite Setup    SuiteSetup
 Suite Teardown    Close All Browsers
 
 *** Test Cases ***
+Check Sidebar Products Category
+    [Tags]    navbar_C
+    [Setup]    Open Sidebar
+    [Template]    Verify Sidebar Products Category List Item Should As Expected
+    Computer Systems
+    Components
+    Electronics
+    Gaming
+    Networking
+    Office Solutions
+    Automotive & Industrial
+    Home & Tools
+    Health & Sports
+    Apparel & Accessories
+    Toys & Drones
+    [Teardown]    Close Sidebar
+
 Click Navigation Logo Should Go To Top Page
     [Tags]    navbar_A
     Wait Until Element Is Visible    //div[@class="header2020-inner"]/div[@class="header2020-logo"]//img
@@ -26,23 +43,6 @@ Click Navigation Logo On Products Page Should Go To Top Page
         Click Element    //div[@class="header2020-inner"]/div[@class="header2020-logo"]//img
         Verify Should Navigate To Top Page
     END
-
-Check Sidebar Products Category
-    [Tags]    navbar_C
-    [Setup]    Open Sidebar
-    [Template]    Verify Sidebar Products Category List Item Should As Expected
-    Computer Systems
-    Components
-    Electronics
-    Gaming
-    Networking
-    Office Solutions
-    Automotive & Industrial
-    Home & Tools
-    Health & Sports
-    Apparel & Accessories
-    Toys & Drones
-    [Teardown]    Close Sidebar
 
 *** Keywords ***
 SuiteSetup
