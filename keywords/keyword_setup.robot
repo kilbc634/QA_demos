@@ -13,6 +13,7 @@ Open Chrome With Webdriver
     ${chromedriverPath} =    Set Variable If
     ...    '${myOS}' == 'Windows'    ${workDir}/src/chromedriver_win.exe
     ...    '${myOS}' == 'Linux'    ${workDir}/src/chromedriver_linux
+    ...    '${myOS}' == 'Darwin'    ${workDir}/src/chromedriver_mac
     ${driver} =    Create Webdriver    Chrome    options=${options}    executable_path=${chromedriverPath}
     Set Window Size    1440    900
     Run Keyword If    '${startPage}' != '${EMPTY}'
