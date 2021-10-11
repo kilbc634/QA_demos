@@ -3,7 +3,7 @@ FROM tuyn76801/ubuntu-18.04:200820
 ENV LANG="C.UTF-8"
 #WORKDIR /home/${APP_NAME}
 
-#ADD ./ ./
+ADD ./ ./
 RUN pip3 install --no-cache-dir -r requirements.txt
 # install chrome
 RUN apt update
