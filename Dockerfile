@@ -17,4 +17,4 @@ RUN apt -y install google-chrome-stable
 RUN chmod 777 src/chromedriver_linux
 RUN chmod 777 src/chromedriver_win.exe
 
-CMD python3 -m robot .
+#CMD python3 -m robot .
